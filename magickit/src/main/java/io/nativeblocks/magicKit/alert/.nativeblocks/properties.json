@@ -1,0 +1,12 @@
+[
+  {
+    "key": "message",
+    "description": "message to show",
+    "type": "STRING",
+    "valuePicker": "text-input",
+    "value": "",
+    "valuePickerCategory": "general",
+    "valuePickerGroup": "",
+    "valuePickerOption": "[]"
+  }
+]

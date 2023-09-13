@@ -1,0 +1,32 @@
+[
+  {
+    "key": "variableKey",
+    "description": "key of the variable",
+    "type": "STRING",
+    "valuePicker": "text-input",
+    "value": "",
+    "valuePickerCategory": "general",
+    "valuePickerGroup": "",
+    "valuePickerOption": "[]"
+  },
+  {
+    "key": "variableType",
+    "description": "type of the variable",
+    "type": "STRING",
+    "valuePicker": "dropdown",
+    "value": "",
+    "valuePickerCategory": "general",
+    "valuePickerGroup": "",
+    "valuePickerOption": "[{\"id\":\"STRING\",\"value\":\"string\"},{\"id\":\"INT\",\"value\":\"int\"},{\"id\":\"LONG\",\"value\":\"long\"},{\"id\":\"DOUBLE\",\"value\":\"double\"},{\"id\":\"FLOAT\",\"value\":\"float\"},{\"id\":\"BOOLEAN\",\"value\":\"boolean\"}]"
+  },
+  {
+    "key": "variableValue",
+    "description": "value of the variable",
+    "type": "STRING",
+    "valuePicker": "text-input",
+    "value": "",
+    "valuePickerCategory": "general",
+    "valuePickerGroup": "",
+    "valuePickerOption": "[]"
+  }
+]

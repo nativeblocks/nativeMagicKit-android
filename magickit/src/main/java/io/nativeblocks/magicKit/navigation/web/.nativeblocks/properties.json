@@ -1,0 +1,22 @@
+[
+  {
+    "key": "destinationUrl",
+    "description": "web url",
+    "type": "STRING",
+    "valuePicker": "text-input",
+    "value": "",
+    "valuePickerCategory": "general",
+    "valuePickerGroup": "",
+    "valuePickerOption": "[]"
+  },
+  {
+    "key": "destinationInApp",
+    "description": "in-app browser or system browser",
+    "type": "STRING",
+    "valuePicker": "toggle",
+    "value": "",
+    "valuePickerCategory": "general",
+    "valuePickerGroup": "",
+    "valuePickerOption": "[]"
+  }
+]

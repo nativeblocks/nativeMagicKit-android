@@ -1,21 +1,23 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
+ext {
+    PUBLISH_GROUP_ID = 'com.github.nativeblocks'
+    PUBLISH_VERSION = '0.1.0'
+    PUBLISH_ARTIFACT_ID = 'nativeMagicKit-android'
+}
+
 android {
-    namespace 'io.nativeblocks.nativemagickit.sample'
+    namespace 'io.nativeblocks.magicKit'
     compileSdk 34
+
     defaultConfig {
-        applicationId "io.nativeblocks.nativemagickit.sample"
         minSdk 26
         targetSdk 34
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        vectorDrawables {
-            useSupportLibrary true
-        }
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -47,10 +49,6 @@ android {
 dependencies {
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.activity:activity-compose:1.7.2'
-    implementation 'androidx.compose.material:material:1.5.1'
-    implementation 'androidx.compose.animation:animation:1.5.1'
     implementation 'androidx.compose.ui:ui-tooling:1.5.1'
-    implementation 'io.coil-kt:coil-compose:2.3.0'
     implementation 'io.nativeblocks:nativeblocks-android:0.1.2'
-    implementation project(path: ':magickit')
 }

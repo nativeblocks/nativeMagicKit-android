@@ -3,41 +3,25 @@ package io.nativeblocks.nativemagickit.sample
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import io.nativeblocks.nativemagickit.sample.ui.theme.NativeMagicKitandroidTheme
+import io.nativeblocks.core.api.NativeblocksManager
+import io.nativeblocks.core.api.NativeblocksProvider
+import io.nativeblocks.magicKit.NativeblocksMagicHelper
+
+private const val NATIVEBLOCKS_API_KEY =
+    "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3Y2FiY2FjMS00MzI3LTRkMWQtOTVmMS1hOGMyYzc4MjE3MzciLCJvcmciOiI1MmZiNjIzOC1kY2FiLTQwYTYtODdhZC02ZGYyYzliYzVlZDgiLCJpYXQiOjE2OTIzODQ0MTIsImV4cCI6MTcyMzkyMDQxMn0.0hF-KSXtcqxMNcar1OOBs-H9gDTkAoC903TXVw6bGDg"
+
+private const val NATIVEBLOCKS_API_URL = "http://192.168.1.39:8585/graphql"
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        NativeblocksManager.initialize(this, NATIVEBLOCKS_API_URL, NATIVEBLOCKS_API_KEY)
+
+        NativeblocksMagicHelper.provideMagics(this)
+
         setContent {
-            NativeMagicKitandroidTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("Android")
-                }
-            }
+            NativeblocksProvider()
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    NativeMagicKitandroidTheme {
-        Greeting("Android")
     }
 }

@@ -1,0 +1,102 @@
+[
+  {
+    "key": "endpointUrl",
+    "type": "STRING",
+    "value": "",
+    "description": "endpoint url with path & query",
+    "valuePicker": "text-input",
+    "valuePickerCategory": "general",
+    "valuePickerGroup": "",
+    "valuePickerOption": "[]"
+  },
+  {
+    "key": "method",
+    "type": "STRING",
+    "value": "GET",
+    "description": "endpoint url with path & query",
+    "valuePicker": "dropdown",
+    "valuePickerCategory": "general",
+    "valuePickerGroup": "",
+    "valuePickerOption": "[]"
+  },
+  {
+    "key": "headers",
+    "type": "STRING",
+    "value": "",
+    "description": "json key-value",
+    "valuePicker": "text-area-input",
+    "valuePickerCategory": "general",
+    "valuePickerGroup": "",
+    "valuePickerOption": "[]"
+  },
+  {
+    "key": "body",
+    "type": "STRING",
+    "value": "",
+    "description": "json key-value",
+    "valuePicker": "text-area-input",
+    "valuePickerCategory": "general",
+    "valuePickerGroup": "",
+    "valuePickerOption": "[]"
+  },
+  {
+    "key": "successResponseCodeKey",
+    "type": "INT",
+    "value": "",
+    "description": "a variable key",
+    "valuePicker": "text-input",
+    "valuePickerCategory": "general",
+    "valuePickerGroup": "",
+    "valuePickerOption": "[]"
+  },
+  {
+    "key": "successResponseBodyKey",
+    "type": "STRING",
+    "value": "",
+    "description": "a variable key",
+    "valuePicker": "text-input",
+    "valuePickerCategory": "general",
+    "valuePickerGroup": "",
+    "valuePickerOption": "[]"
+  },
+  {
+    "key": "successResponseHeaderKey",
+    "type": "STRING",
+    "value": "",
+    "description": "a variable key",
+    "valuePicker": "text-input",
+    "valuePickerCategory": "general",
+    "valuePickerGroup": "",
+    "valuePickerOption": "[]"
+  },
+  {
+    "key": "failureResponseCodeKey",
+    "type": "INT",
+    "value": "",
+    "description": "a variable key",
+    "valuePicker": "text-input",
+    "valuePickerCategory": "general",
+    "valuePickerGroup": "",
+    "valuePickerOption": "[]"
+  },
+  {
+    "key": "failureResponseBodyKey",
+    "type": "STRING",
+    "value": "",
+    "description": "a variable key",
+    "valuePicker": "text-input",
+    "valuePickerCategory": "general",
+    "valuePickerGroup": "",
+    "valuePickerOption": "[]"
+  },
+  {
+    "key": "failureResponseHeaderKey",
+    "type": "STRING",
+    "value": "",
+    "description": "a variable key",
+    "valuePicker": "text-input",
+    "valuePickerCategory": "general",
+    "valuePickerGroup": "",
+    "valuePickerOption": "[]"
+  }
+]
