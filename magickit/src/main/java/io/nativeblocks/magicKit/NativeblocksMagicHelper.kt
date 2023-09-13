@@ -3,8 +3,8 @@ package io.nativeblocks.magicKit
 import android.content.Context
 import io.nativeblocks.core.api.NativeblocksManager
 import io.nativeblocks.magicKit.alert.NativeToastMagic
-import io.nativeblocks.magicKit.api.NativeRestApiClient
-import io.nativeblocks.magicKit.api.NativeRestApiMagic
+import io.nativeblocks.magicKit.restApi.NativeRestApiClient
+import io.nativeblocks.magicKit.restApi.NativeRestApiMagic
 import io.nativeblocks.magicKit.delay.NativeDelayMagic
 import io.nativeblocks.magicKit.navigation.internal.NativeNavigationMagic
 import io.nativeblocks.magicKit.navigation.web.NativeNavigationWebMagic

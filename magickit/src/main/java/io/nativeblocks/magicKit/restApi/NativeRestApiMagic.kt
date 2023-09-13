@@ -1,4 +1,4 @@
-package io.nativeblocks.magicKit.api
+package io.nativeblocks.magicKit.restApi
 
 import io.nativeblocks.core.api.provider.magic.INativeMagic
 import io.nativeblocks.core.api.provider.magic.MagicProps

@@ -1,4 +1,4 @@
-package io.nativeblocks.magicKit.api
+package io.nativeblocks.magicKit.restApi
 
 import okhttp3.Call
 import okhttp3.Callback
