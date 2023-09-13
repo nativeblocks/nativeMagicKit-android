@@ -3,6 +3,7 @@ package io.nativeblocks.nativemagickit.sample
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import io.nativeblocks.blockKit.NativeblocksBlockHelper
 import io.nativeblocks.core.api.NativeblocksManager
 import io.nativeblocks.core.api.NativeblocksProvider
 import io.nativeblocks.magicKit.NativeblocksMagicHelper
@@ -18,6 +19,7 @@ class MainActivity : ComponentActivity() {
 
         NativeblocksManager.initialize(this, NATIVEBLOCKS_API_URL, NATIVEBLOCKS_API_KEY)
 
+        NativeblocksBlockHelper.provideBlocks()
         NativeblocksMagicHelper.provideMagics(this)
 
         setContent {
