@@ -1,0 +1,43 @@
+apply plugin: 'maven-publish'
+
+group = PUBLISH_GROUP_ID
+version = PUBLISH_VERSION
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId PUBLISH_GROUP_ID
+            artifactId PUBLISH_ARTIFACT_ID
+            version PUBLISH_VERSION
+
+            afterEvaluate {
+                from components.release
+            }
+            pom {
+                name = PUBLISH_ARTIFACT_ID
+                description = "The magicKit SDK for nativeblocks"
+                url = 'https://nativeblocks.io'
+                licenses {
+                    license {
+                        name = 'MIT license'
+                        url = 'https://opensource.org/licenses/MIT'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'alireza@nativeblocks.io'
+                        name = 'alireza'
+                        email = 'alireza@nativeblocks.io'
+                    }
+                }
+
+                // Version control info
+                scm {
+                    connection = 'scm:git:github.com/nativeblocks/nativeMagicKit-android.git'
+                    developerConnection = 'scm:git:ssh://github.com/nativeblocks/nativeMagicKit-android.git'
+                    url = 'https://github.com/nativeblocks/nativeMagicKit-android'
+                }
+            }
+        }
+    }
+}
