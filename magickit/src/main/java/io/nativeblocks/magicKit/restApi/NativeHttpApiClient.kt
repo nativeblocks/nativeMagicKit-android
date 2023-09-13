@@ -8,8 +8,6 @@ import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.Response
 import okhttp3.ResponseBody
-import org.json.JSONArray
-import org.json.JSONObject
 import java.io.IOException
 import java.util.concurrent.TimeUnit
 
@@ -32,58 +30,6 @@ enum class HttpApiRequestMethod(private val method: String) {
             return values().firstOrNull { it.method == method } ?: return GET
         }
 
-    }
-}
-
-internal fun <T> parseJsonArray(jsonString: String): List<T> {
-    return try {
-        JSONArray(jsonString).toList() as List<T>
-    } catch (e: Exception) {
-        listOf()
-    }
-}
-
-internal fun parseJsonObject(jsonString: String): Map<String, Any> {
-    return try {
-        JSONObject(jsonString).toMap()
-    } catch (e: Exception) {
-        mapOf()
-    }
-}
-
-internal fun JSONObject.toMap(): Map<String, Any> {
-    try {
-        val map = mutableMapOf<String, Any>()
-        val keysItr: Iterator<String> = this.keys()
-        while (keysItr.hasNext()) {
-            val key = keysItr.next()
-            var value: Any = this.get(key)
-            when (value) {
-                is JSONArray -> value = value.toList()
-                is JSONObject -> value = value.toMap()
-            }
-            map[key] = value
-        }
-        return map
-    } catch (e: Exception) {
-        return mapOf()
-    }
-}
-
-internal fun JSONArray.toList(): List<Any> {
-    return try {
-        val list = mutableListOf<Any>()
-        for (i in 0 until this.length()) {
-            var value: Any = this[i]
-            when (value) {
-                is JSONArray -> value = value.toList()
-                is JSONObject -> value = value.toMap()
-            }
-            list.add(value)
-        }
-        list
-    } catch (e: Exception) {
-        listOf()
     }
 }
 

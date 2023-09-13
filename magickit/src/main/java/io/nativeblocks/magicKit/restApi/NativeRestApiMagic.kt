@@ -3,6 +3,7 @@ package io.nativeblocks.magicKit.restApi
 import io.nativeblocks.core.api.provider.magic.INativeMagic
 import io.nativeblocks.core.api.provider.magic.MagicProps
 import io.nativeblocks.core.util.getVariableValue
+import io.nativeblocks.core.util.parseJsonObject
 import kotlinx.coroutines.launch
 
 class NativeRestApiMagic(

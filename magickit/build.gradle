@@ -4,7 +4,7 @@ plugins {
 }
 ext {
     PUBLISH_GROUP_ID = 'com.github.nativeblocks'
-    PUBLISH_VERSION = '0.1.0'
+    PUBLISH_VERSION = '0.1.1'
     PUBLISH_ARTIFACT_ID = 'nativeMagicKit-android'
 }
 
@@ -51,5 +51,5 @@ dependencies {
     implementation 'androidx.activity:activity-compose:1.7.2'
     implementation 'androidx.compose.ui:ui-tooling:1.5.1'
     implementation "com.squareup.okhttp3:okhttp:4.10.0"
-    implementation 'io.nativeblocks:nativeblocks-android:0.1.2'
+    implementation 'io.nativeblocks:nativeblocks-android:0.1.3'
 }
