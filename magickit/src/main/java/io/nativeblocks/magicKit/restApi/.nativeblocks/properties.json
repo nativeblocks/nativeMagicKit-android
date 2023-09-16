@@ -5,7 +5,7 @@
     "value": "",
     "description": "endpoint url with path & query",
     "valuePicker": "text-input",
-    "valuePickerCategory": "general",
+    "valuePickerCategory": "request",
     "valuePickerGroup": "",
     "valuePickerOption": "[]"
   },
@@ -15,9 +15,9 @@
     "value": "GET",
     "description": "endpoint url with path & query",
     "valuePicker": "dropdown",
-    "valuePickerCategory": "general",
+    "valuePickerCategory": "request",
     "valuePickerGroup": "",
-    "valuePickerOption": "[]"
+    "valuePickerOption": "[{\"id\":\"GET\",\"value\":\"GET\"},{\"id\":\"POST\",\"value\":\"POST\"},{\"id\":\"PUT\",\"value\":\"PUT\"},{\"id\":\"PATCH\",\"value\":\"PATCH\"},{\"id\":\"DELETE\",\"value\":\"DELETE\"}]"
   },
   {
     "key": "headers",
@@ -25,7 +25,7 @@
     "value": "",
     "description": "json key-value",
     "valuePicker": "text-area-input",
-    "valuePickerCategory": "general",
+    "valuePickerCategory": "request",
     "valuePickerGroup": "",
     "valuePickerOption": "[]"
   },
@@ -35,7 +35,7 @@
     "value": "",
     "description": "json key-value",
     "valuePicker": "text-area-input",
-    "valuePickerCategory": "general",
+    "valuePickerCategory": "request",
     "valuePickerGroup": "",
     "valuePickerOption": "[]"
   },
@@ -45,8 +45,8 @@
     "value": "",
     "description": "a variable key",
     "valuePicker": "text-input",
-    "valuePickerCategory": "general",
-    "valuePickerGroup": "",
+    "valuePickerCategory": "response",
+    "valuePickerGroup": "success",
     "valuePickerOption": "[]"
   },
   {
@@ -55,8 +55,8 @@
     "value": "",
     "description": "a variable key",
     "valuePicker": "text-input",
-    "valuePickerCategory": "general",
-    "valuePickerGroup": "",
+    "valuePickerCategory": "response",
+    "valuePickerGroup": "success",
     "valuePickerOption": "[]"
   },
   {
@@ -65,8 +65,8 @@
     "value": "",
     "description": "a variable key",
     "valuePicker": "text-input",
-    "valuePickerCategory": "general",
-    "valuePickerGroup": "",
+    "valuePickerCategory": "response",
+    "valuePickerGroup": "success",
     "valuePickerOption": "[]"
   },
   {
@@ -75,8 +75,8 @@
     "value": "",
     "description": "a variable key",
     "valuePicker": "text-input",
-    "valuePickerCategory": "general",
-    "valuePickerGroup": "",
+    "valuePickerCategory": "response",
+    "valuePickerGroup": "failure",
     "valuePickerOption": "[]"
   },
   {
@@ -85,8 +85,8 @@
     "value": "",
     "description": "a variable key",
     "valuePicker": "text-input",
-    "valuePickerCategory": "general",
-    "valuePickerGroup": "",
+    "valuePickerCategory": "response",
+    "valuePickerGroup": "failure",
     "valuePickerOption": "[]"
   },
   {
@@ -95,8 +95,8 @@
     "value": "",
     "description": "a variable key",
     "valuePicker": "text-input",
-    "valuePickerCategory": "general",
-    "valuePickerGroup": "",
+    "valuePickerCategory": "response",
+    "valuePickerGroup": "failure",
     "valuePickerOption": "[]"
   }
 ]
